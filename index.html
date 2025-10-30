@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .traffic_light{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 50px;
+            height: 150px;
+            background-color: #333;
+            border-radius: 20px;
+            margin-left: 35%;
+            margin-top: 20px;
+            position: relative;
+            left: 650px;
+        }
+        .red, .yellow, .green{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .red{
+            background-color: rgb(63, 27, 27);
+            animation-name: red_light;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes red_light {
+            0%{
+                background-color: rgb(63, 27, 27);
+            }
+          
+            50%{
+                background-color: rgb(244, 22, 22);
+            }
+        }
+        .yellow{
+            background-color: rgb(100, 100, 30);
+              animation-name: yellow_light;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes yellow_light {
+            0%{
+                background-color: rgb(100, 100, 30);
+            }
+            75%{
+                background-color: yellow;
+            }
+        }
+        .green{
+            background-color: rgb(26, 72, 26);
+                animation-name: green_light;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes green_light {
+             0%{
+                background-color: rgb(26, 72, 26);
+            }
+            100%{
+                background-color: green;
+            }
+        }
+        .sticksss{
+            width: 15px;
+            height: 150px;
+            background-color: #333;
+            border-radius: 10px;
+            position: relative;
+            left: 1880px;
+            bottom: 10px;
+          
+        }
+        @keyframes moveBox {
+      0% {
+        transform: translateX(0);
+      
+      }
+      50% {
+        transform: translateX(1000px);
+       
+      }
+      100% {
+        transform: translateX(0);
+        
+      }
+    }
+    .pinkcar{
+      width: 100px;
+      height: 100px;
+      animation: moveBox 3s ease-out infinite;
+    }
+   
+    </style>
+</body>
+</html>
+  <title>CSS Animation</title>
+</head>
+<body>
+    <div class="traffic_light">
+           <div class="red"></div>
+           <div class="yellow"></div>
+           <div class="green"></div>
+     </div>
+    <div class="sticksss"></div>
+    <div class="pinkcar">
+    <img src="pik car.webp" alt="">
+    </div>
+    <div class="modern houses">
+        <img style="position: relative;bottom: 350px; left: 2550px;" src="houses.webp" alt="">
+    </div>
+    <div class="doll">
+        <img style=" position: relative;left: 2000px; bottom: 840px;" src="image.jpg" alt="">
+    </div>
+</body>
+</html>
